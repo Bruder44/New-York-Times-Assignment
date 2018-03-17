@@ -6,15 +6,17 @@
    <title>Page Title</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
    <script src="assets/javascript/main.js"></script>
 </head>
 <body>
-   <div class="container">
+   <div class="container-fluid">
        <div class="jumbotron text-center">
            <h1>New York Times Search</h1>
        </div>
+   </div>
+   <div class="container">    
        <div class="row">
            <div class="panel panel-default">
                <div class="panel-heading"><p>Search Parameters</p></div>
@@ -22,17 +24,18 @@
                    <form>
                        <div class="form-group">
                            <label for="historical-figure">Historical Figure</label>
-                           <input type="text" class="form-control" id="historical-figure" placeholder="George Washington">
+                           <input id="historical-figure" type="text" class="form-control" id="historical-figure" placeholder="George Washington">
                        </div>
                        <div class="form-group">
                            <label for="min-year">Minimum Year</label>
-                           <input type="text" class="form-control" id="min-year" placeholder="Example: 1775">
+                           <input id="min-year" type="text" class="form-control" id="min-year" placeholder="Example: 1775">
                        </div>
                        <div class="form-group">
                            <label for="max-year">Maximum Year</label>
-                           <input type="text" class="form-control" id="max-year" placeholder="Example: 2010">
+                           <input id="max-year" type="text" class="form-control" placeholder="Example: 2010">
                        </div>
-                       <button type="submit" class="btn btn-primary">Submit</button>
+                       <button id="submit" class="btn btn-primary">Submit</button>
+                       <button id=:"reset" class="btn btn-primary">Clear Results</button>
                    </form>
                </div>
            </div>
@@ -40,7 +43,7 @@
        <div class="row">
            <div class="panel panel-default">
                <div class="panel-heading"><p>Top Articles</p></div>
-               <div class="panel-body">
+               <div id="top-articles" class="panel-body">
 
                </div>
            </div>
